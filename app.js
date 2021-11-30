@@ -5,12 +5,23 @@ let num2 = parseInt(prompt("Please enter second number"));
 let operation = prompt("Please select what you want to do add substract multiply and divide");
 
 if(operation === "add"){
-  
-  add((a,b) => a+b);
+  function add(a,b){
+    console.log( a + b);
+  }
+  add(num1,num2)
 } else if(operation === "substract"){
-  sub((a,b) => a-b);
+  function sub(a,b){
+    console.log( a - b);
+  }
+  sub(num1,num2)
 } else if(operation === "multiply"){
-  mult((a,b) => a*b);
-} else if(operation === divide){
-  divide((a,b) => a/b);
+  function mult(a,b){
+    console.log( a * b);
+  }
+  mult(num1,num2)
+} else if(operation === "divide"){
+  function div(a,b){
+    console.log( a / b);
+  }
+  div(num1,num2)
 }
